@@ -1,0 +1,25 @@
+@mixin align-items($property){
+    -webkit-box-align: $property;
+	-ms-flex-align: $property;
+	align-items: $property;
+}
+
+@mixin justify-content($property){
+    -webkit-box-pack: $property;
+	-ms-flex-pack: $property;
+	justify-content: $property;
+}
+
+@mixin flex-wrap($property){
+    -ms-flex-wrap:  $property;
+	    flex-wrap:  $property;
+}
+
+.vertical-center {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-wrap(wrap);	
+}
