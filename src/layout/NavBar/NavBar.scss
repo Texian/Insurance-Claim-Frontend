@@ -23,3 +23,12 @@
     @include justify-content(center);
     @include flex-wrap(wrap);	
 }
+
+.vertical-right {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+    @include align-items(right);
+    @include justify-content(right);
+    @include flex-wrap(wrap);	
+}

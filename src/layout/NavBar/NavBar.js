@@ -5,13 +5,20 @@ import {Link} from 'react-router-dom';
 const NavBar = (props) => {
     return (
         <>
-        <header className="vertical-center">
+        <div className="vertical-right">
             <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Insurance CLaim Page</a></li>
-                <li><a href="">Login</a></li>
+                {
+                    (props.user)
+                    ?<>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">LogOut</a></li>
+                    </>
+                    :<>
+                    <li><a href="">Login</a></li>
+                    </>
+                }
             </ul>
-        </header>
+        </div>
         </>
     );
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import NavBar from '../../layout/NavBar/NavBar.js';
+import Header from '../../layout/Header/Header.js';
 
 function App() {
   return (
     <>
     <div className="App">
-      <NavBar />
+      <Header />
     </div>
     </> 
   );
