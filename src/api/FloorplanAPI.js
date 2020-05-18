@@ -20,7 +20,7 @@ const deleteFp = (id) => {
     .catch(err = console.log(`Floorplan Delete Error: ${err}`));
 }
 
-default export {
+export default {
     index,
     update,
     deleteFp
