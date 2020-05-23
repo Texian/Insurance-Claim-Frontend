@@ -15,7 +15,7 @@ class FloorplanContainer extends React.Component {
             let floorplanToUpdate = floorplans.findIndex(floorplan._id === res.data._id);
             floorplans[floorplanToUpdate] = res.data;
             this.setState({
-                fpName
+                floorplans
             })    
         })
     } 
@@ -27,7 +27,7 @@ class FloorplanContainer extends React.Component {
                 return floorplan._id !== id;
             })
             this.setState({
-                fpName
+                floorplans
             })
         });
     }

@@ -8,15 +8,15 @@ class Login extends React.Component{
 
     handleChange = (event) => {
         this.setState({
-            [event.target.name]: event.target.value;
+            [event.target.name]: event.target.value
         })
     }
 
     handleSubmit = (e) => {
         e.preventDefault();
         let user = {
-            email = this.state.email,
-            password = this.state.password
+            email: this.state.email,
+            password: this.state.password
         }
         this.props.login(user);
     }
