@@ -30,5 +30,12 @@
 	display: flex;
     @include align-items(right);
     @include justify-content(right);
-    @include flex-wrap(wrap);	
+	@include flex-wrap(wrap);	
+	ul{
+		margin: 0;
+	}
+	li {
+		text-decoration: none;
+		list-style: none;
+	}
 }

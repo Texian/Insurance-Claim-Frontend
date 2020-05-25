@@ -2,6 +2,7 @@ import React from 'react';
 import {Route, Redirect, Switch} from 'react-router-dom';
 import Home from '../components/Home/Home';
 import LoginWindow from '../layout/Login/LoginWindow';
+import About from '../components/About/About';
 
 const Routes = (props) => {
     return (
@@ -23,6 +24,7 @@ const Routes = (props) => {
                     <LoginWindow login={props.login} />
                 }
             />
+            <About />
         </Switch>
     )
 }
