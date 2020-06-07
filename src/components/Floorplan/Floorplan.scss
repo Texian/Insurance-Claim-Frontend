@@ -1,0 +1,65 @@
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.body:after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 120px;
+  background: rgba(255,0,0,0.3);
+/*   border-radius: 100%; */
+  position: absolute;
+  z-index: 100;
+  top: 30px;
+  left: 88px;
+}
+#s {
+  transition: transform 2s linear;
+  background: radial-gradient(circle at center, #eee 0%, #999 100%);
+}
+#s:hover {
+/*   transform: scale(6); */
+}
+.map-grid {
+  fill: transparent;
+  stroke: #ddd;
+  stroke-width: 1px;
+  z-index: 0;
+}
+.map-grid--visible {
+  fill: #fff;
+}
+@keyframes CURRENT {
+  0% {
+    stroke: black;
+  }
+  50% {
+    stroke: #f70;
+  }
+  100% {
+    stroke: black;
+  }
+}
+.map-grid--current {
+  stroke-width: 4px;
+  fill: #fff;
+  stroke: black;
+  z-index: 1;
+  cursor: pointer;
+  animation: 2s CURRENT linear infinite;
+}
+.map-grid--hub {
+  stroke-width: 4px;
+  fill: #fff;
+  stroke: #999;
+  z-index: 1;
+  cursor: pointer;
+  stroke-dasharray: 4;
+}
+.spoke {
+  stroke: black;
+  stroke-width: 4px;
+}

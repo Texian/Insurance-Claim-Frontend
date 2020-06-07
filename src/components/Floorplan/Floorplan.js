@@ -36,6 +36,8 @@ class Floorplan extends React.Component {
     render() {
         return(
             <div className="floorplan">
+                <svg id="s" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                </svg>
                 {
                     this.state.isEditing &&
                     <>
